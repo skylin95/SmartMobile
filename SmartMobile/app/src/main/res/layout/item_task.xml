@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_marginLeft="10dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/noselected"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rl_setting_bg"
+        android:orientation="vertical">
+        <include layout="@layout/layout_task_simple"/>
+        <!-- 审批按钮 -->
+        <LinearLayout
+            android:id="@+id/ll_op"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/tv_agree_inside"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/rl_setting_bg"
+                android:gravity="center"
+                android:text="同意"
+                style="@style/approveTextStyle"/>
+            <TextView
+                android:padding="10dp"
+                android:layout_marginLeft="-3dp"
+                android:id="@+id/tv_reject_inside"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/rl_setting_bg"
+                android:text="退回"
+                android:gravity="center"
+                style="@style/approveTextStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/tv_agree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bt_agree_bg"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/tv_refuse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bt_refuse_bg"
+            android:text="拒绝"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

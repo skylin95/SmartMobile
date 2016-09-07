@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">昆仑能源网报移动审批</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_copyright">Copyright © 2001 - 2016 Pansoft.All Rights Reserved. </string>
+
+    <!-- login password encode key -->
+    <string name="login_encode_key1">JSZX</string>
+    <string name="login_encode_key2"></string>
+    <string name="login_encode_key3"></string>
+    <!-- login error -->
+    <string name="login_user_empty">用户名为空</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 应用基本名称配置 -->
+    <string name="main.navigator.task.title">任务</string>
+    <string name="main.navigator.app.title">应用</string>
+    <string name="main.navigator.contacts.title">通讯录</string>
+    <string name="main.navigator.mine.title">我的</string>
+
+    <!-- 任务页面 -->
+    <string name="task.unfinished.title">待办</string>
+    <string name="task.finished.title">已办</string>
+    <string name="task.multiop.title">批量</string>
+</resources>

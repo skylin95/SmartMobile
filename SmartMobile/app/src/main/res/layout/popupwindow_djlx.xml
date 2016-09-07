@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_djlx"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <ListView
+        android:id="@+id/lv_djlx"
+        android:layout_width="match_parent"
+        android:background="@drawable/rl_setting_bg"
+        android:divider="@color/colorStroke"
+        android:dividerHeight="0.5dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ListView>
+    <Button
+        android:id="@+id/bt_djlx"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_button_bg"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:text="确定"/>
+</LinearLayout>

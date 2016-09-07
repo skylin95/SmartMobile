@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pansoft.app.smartmobile.activity.SetProtocolActivity"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:background      ="@color/colorTitle"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="协议"
+            style="@style/com_title_text"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/rg_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rl_setting_bg"
+                android:id="@+id/rb_http"
+                android:padding="20dp"
+                android:text="Http协议"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:button="@null"
+                android:drawableRight="@drawable/com_selected_right"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+            <RadioButton
+                android:background="@drawable/rl_setting_bg"
+                android:padding="20dp"
+                android:id="@+id/rb_https"
+                android:text="Https协议"
+                android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:button="@null"
+                android:drawableRight="@drawable/com_selected_right"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+    </RadioGroup>
+</LinearLayout>
